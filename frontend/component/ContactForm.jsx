@@ -82,7 +82,7 @@ function ContactForm({ setContacts, contacts, editingContact, setEditingContact 
       } else {
         // Create
         const res = await axios.post(
-          "http://localhost:5000/api/contacts",
+          "https://amountcollection.onrender.com/api/contacts",
           contactData
         );
         setContacts([res.data, ...contacts]);
