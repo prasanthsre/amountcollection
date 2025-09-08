@@ -12,7 +12,7 @@ function ContactList({ setContacts, contacts }) {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/contacts");
+        const res = await axios.get("https://amountcollection.onrender.com/api/contacts");
         const sorted = res.data.sort(
           (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
         );
