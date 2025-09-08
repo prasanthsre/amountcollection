@@ -72,7 +72,7 @@ function ContactForm({ setContacts, contacts, editingContact, setEditingContact 
       if (editingContact) {
         // Update
         const res = await axios.put(
-          `http://localhost:5000/api/contacts/${editingContact._id}`,
+          `https://amountcollection.onrender.com/api/contacts/${editingContact._id}`,
           contactData
         );
         setContacts(
